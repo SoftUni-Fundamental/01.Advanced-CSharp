@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SequencesOfEqualStrings"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.LongestIncreasingSequence", "05.LongestIncreasingSequence\05.LongestIncreasingSequence.csproj", "{8CA716B6-6C8D-4558-81C9-5F4CE53DFE72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.SubsetSums", "06.SubsetSums\06.SubsetSums.csproj", "{71C43214-B4E2-4F91-A480-3357BC4B1215}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8CA716B6-6C8D-4558-81C9-5F4CE53DFE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CA716B6-6C8D-4558-81C9-5F4CE53DFE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CA716B6-6C8D-4558-81C9-5F4CE53DFE72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71C43214-B4E2-4F91-A480-3357BC4B1215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71C43214-B4E2-4F91-A480-3357BC4B1215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71C43214-B4E2-4F91-A480-3357BC4B1215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71C43214-B4E2-4F91-A480-3357BC4B1215}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

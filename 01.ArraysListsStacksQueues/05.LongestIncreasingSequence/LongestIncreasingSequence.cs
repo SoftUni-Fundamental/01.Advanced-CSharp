@@ -18,8 +18,6 @@ class LongestIncreasingSequence
 
         while (numbers.Count > 0)
         {
-            // 2 3 4 1 50 2 3 4 5
-            //  1 2 3 4 5 6 7 8 9
             List<int> tempList = new List<int>();
             tempList.Add(numbers[0]);
             int sequCount = 1;
