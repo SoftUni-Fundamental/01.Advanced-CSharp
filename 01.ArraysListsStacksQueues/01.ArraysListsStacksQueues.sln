@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.LongestIncreasingSequenc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.SubsetSums", "06.SubsetSums\06.SubsetSums.csproj", "{71C43214-B4E2-4F91-A480-3357BC4B1215}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.SortedSubsetSum", "07.SortedSubsetSum\07.SortedSubsetSum.csproj", "{60D01455-58A6-49EA-A7FD-5C837E7E7DAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{71C43214-B4E2-4F91-A480-3357BC4B1215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71C43214-B4E2-4F91-A480-3357BC4B1215}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71C43214-B4E2-4F91-A480-3357BC4B1215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D01455-58A6-49EA-A7FD-5C837E7E7DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D01455-58A6-49EA-A7FD-5C837E7E7DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D01455-58A6-49EA-A7FD-5C837E7E7DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D01455-58A6-49EA-A7FD-5C837E7E7DAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
