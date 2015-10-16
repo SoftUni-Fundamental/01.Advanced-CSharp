@@ -13,9 +13,16 @@ class SubsetSums
 {
     static void Main()
     {
-        //  0 11 1 10 5 6 3 4 7 2
+        Console.Write("{0,-30}", "Enter number for subset sum:");
+        int subSum = int.Parse(Console.ReadLine());
+
+        Console.Write("{0,-30}", "Enter sub-set sequence:");
         int[] input = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
+        Array.Sort(input);
+        var unique = new HashSet<string>();
+        
+        bool noSubsets = true;
         int maskField = 1 << input.Length;
         for (int maskCount = 0; maskCount < maskField; maskCount++)
         {
@@ -27,9 +34,22 @@ class SubsetSums
                     subSet.Add(input[i]);
                 }
             }
-            if (subSet.Sum() == 11)
+            if (subSet.Sum() == subSum && subSet.Count > 0)
             {
-                Console.WriteLine("{0} = 11", string.Join(" + ", subSet));
+                noSubsets = false;
+                string setToString = string.Join(" + ", subSet) + " = " + subSum;
+                unique.Add(setToString);
+            }
+        }
+        if (noSubsets)
+        {
+            Console.WriteLine("No matching subsets.");
+        }
+        else
+        {
+            foreach (var set in unique)
+            {
+                Console.WriteLine(set);
             }
         }
     }
