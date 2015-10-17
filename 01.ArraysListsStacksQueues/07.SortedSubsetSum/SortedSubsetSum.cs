@@ -17,8 +17,8 @@ class SortedSubsetSum
         int subSum = int.Parse(Console.ReadLine());
 
         Console.Write("{0,-30}", "Enter sub-set sequence:");
-        int[] input = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-
+        int[] input = Console.ReadLine().Split(' ').Select(int.Parse).Distinct().ToArray();
+        
         var unique = new List<SortedSet<int>>();
 
         bool noSubsets = true;
@@ -39,19 +39,17 @@ class SortedSubsetSum
                 unique.Add(subSet);
             }
         }
-
+        unique.Sort((a, b) => a.Count - b.Count);
+        unique.Sort();
         if (noSubsets)
         {
             Console.WriteLine("No matching subsets.");
         }
         else
-        {foreach (var set in unique)
+        {
+            foreach (var set in unique)
             {
-                foreach (var item in set)
-                {
-                    Console.Write("{0} ", item);
-                }
-                Console.WriteLine();
+                Console.WriteLine("{0} = {1}", string.Join(" + ",set), subSum);
             }
         }
     }
