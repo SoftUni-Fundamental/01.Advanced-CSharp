@@ -1,8 +1,8 @@
-﻿/*  Write a program that reads from the console a number N and an array of integers given on a single line. 
-    Your task is to find all subsets within the array which have a sum equal to N and print them on the console
-    (the order of printing is not important). 
-    * Find only the unique subsets by filtering out repeating numbers first. 
-    * In case there aren't any subsets with the desired sum, print "No matching subsets."
+﻿/*  Modify the program you wrote for the previous problem to print the results in the following way: 
+     * each line should contain the operands (numbers that form the desired sum) in ascending order; 
+     * the lines containing fewer operands should be printed before those with more operands; 
+     * when two lines have the same number of operands, the one containing the smallest operand should be printed first. 
+     * If two or more lines contain the same number of operands and have the same smallest operand, the order of printing is not important.
 */
 
 using System;
@@ -18,7 +18,7 @@ class SortedSubsetSum
 
         Console.Write("{0,-30}", "Enter sub-set sequence:");
         int[] input = Console.ReadLine().Split(' ').Select(int.Parse).Distinct().ToArray();
-        
+
         var unique = new List<SortedSet<int>>();
 
         bool noSubsets = true;
@@ -39,8 +39,8 @@ class SortedSubsetSum
                 unique.Add(subSet);
             }
         }
-        unique.Sort((a, b) => a.Count - b.Count);
-        unique.Sort();
+
+        unique.Sort((a, b) => (a.Count - b.Count));
         if (noSubsets)
         {
             Console.WriteLine("No matching subsets.");
