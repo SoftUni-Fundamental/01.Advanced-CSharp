@@ -26,7 +26,7 @@ class MatrixShuffling
         {
             Console.WriteLine();
             List<string> input = Console.ReadLine().Split(' ').ToList();
-            //  swap 0 0 1 1
+
             if (input[0].ToLower() == "swap" && input.Count == 5)
             {
                 bool validValues = CheckSwapIndexes(input, rows, cols);
@@ -68,7 +68,7 @@ class MatrixShuffling
             Console.WriteLine();
         }
     }
-
+    
     static int[] ConvertToInts(List<string> input)
     {
         int[] arr = new int[4];
