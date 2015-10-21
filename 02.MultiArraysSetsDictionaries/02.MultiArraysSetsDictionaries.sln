@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SequenceInMatrix", "04.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.CollectTheCoins", "05.CollectTheCoins\05.CollectTheCoins.csproj", "{64470C4F-1B28-4A50-9D59-D7F6BA491040}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.CountSymbols", "06.CountSymbols\06.CountSymbols.csproj", "{AC08EC39-DD3B-4141-B712-A332E1F97A9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{64470C4F-1B28-4A50-9D59-D7F6BA491040}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64470C4F-1B28-4A50-9D59-D7F6BA491040}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64470C4F-1B28-4A50-9D59-D7F6BA491040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC08EC39-DD3B-4141-B712-A332E1F97A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC08EC39-DD3B-4141-B712-A332E1F97A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC08EC39-DD3B-4141-B712-A332E1F97A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC08EC39-DD3B-4141-B712-A332E1F97A9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
