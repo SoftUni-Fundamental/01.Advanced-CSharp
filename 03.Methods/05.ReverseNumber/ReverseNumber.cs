@@ -7,17 +7,25 @@ class ReverseNumber
 {
     static void Main()
     {
-        char[] input = Console.ReadLine().ToCharArray();
-        double reversed = double.Parse(ReverseCharArray(input));
-        Console.WriteLine(reversed);
+        double input = double.Parse(Console.ReadLine());
+        char[] chArray = input.ToString().TrimStart('-').ToCharArray();
+        double reversed = double.Parse(ReverseCharArray(chArray));
+        if (input > 0)
+        {
+            Console.WriteLine(reversed);
+        }
+        else
+        {
+            Console.WriteLine(reversed * -1);
+        }
     }
 
-    static string ReverseCharArray(char[] input)
+    static string ReverseCharArray(char[] chArray)
     {
         string reveredArray = string.Empty;
-        for (int i = input.Length - 1; i >= 0; i--)
+        for (int i = chArray.Length - 1; i >= 0; i--)
         {
-            reveredArray += input[i];
+            reveredArray += chArray[i];
         }
         return reveredArray;
     }
